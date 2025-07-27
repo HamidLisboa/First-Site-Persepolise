@@ -7,7 +7,7 @@
     
     <table style="margin-left:10px;direction:rtl;font-family:IRNazanin;">
         <tr>
-            <td class="auto-style2"><h3 style="color:red; font-family:IRNazanin">تکمیل تمامی فیلدها اجباری است</h3></td>
+            <td class="auto-style2"><h3 style="color:red; font-family:IRNazanin">Preenchimento Obrigatório</h3></td>
         </tr>
         <tr>
             <td class="auto-style2" align="left">Nome de Usário:</td>
