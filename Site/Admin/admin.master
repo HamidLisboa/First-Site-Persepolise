@@ -1,0 +1,48 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin.master.cs" Inherits="Admin_admin" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>مدیریت سایت</title>
+    
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="../Style.css" rel="stylesheet" />
+    <link rel="Shortcut Icon" href="PIC/favicon.gif" />
+    <style type="text/css">
+        .newStyle1 {
+            font-family: IRTitr;
+            font-size: xx-large;
+            font-weight: bold;
+            color: #FFFFFF;
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div id="header" align="center" class="newStyle1">
+            <h1><strong style="color: #66FF66">
+                
+                مدیریت سایت</strong></h1>
+        </div>
+        <div id="menu">
+            <ul>
+            <li><a href="AdminDefault.aspx" title="صفحه نخست" target="_blank">صفحه نخست</a></li>
+                <li><a href="NewsManagement.aspx" title="مدیریت اخبار" target="_blank">مدیریت اخبار</a></li>
+                <li><a href="CommentManager.aspx" title="مدیریت نظرات" target="_blank">مدیریت نظرات</a></li>
+                <li><a href="GalleryManager.aspx" title="مدیریت گالری عکس" target="_blank">مدیریت گالری عکس</a></li>
+            <li><a href="MatchesManagement.aspx" title="مدیریت مسابقات" target="_blank">مدیریت مسابقات</a></li>
+                <li> <asp:LoginStatus ID="LoginStatus1" runat="server" LogoutAction="Redirect" LogoutPageUrl="~/Admin/AdminLogin.aspx" LogoutText="" LoginText="خروج از پنل مدیریت" /></li>    
+               
+            </ul>
+                </div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
